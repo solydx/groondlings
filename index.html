@@ -4,90 +4,71 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Groondlings | Pet and People Projects</title>
-  <meta name="description" content="Groondlings creates comfort-forward Pet and People Projects — pet steps, upholstery, cabinetry, lamps, and small-batch builds — powered by Solyd Solutions' CAD/CAM workflows." />
+  <meta name="description" content="Groondlings creates comfort-forward Pet and People Projects — pet steps, upholstery, cabinetry, lamps, and small-batch builds — powered by Solyd Solutions' CAD/CAM workflows and grounded in hand craftsmanship." />
   <style>
+    /* Minimal, charming, text-first. Warm accents from the logo. */
+    :root {
+      --ink: #2e2b29;       /* body text */
+      --green: #5f7d5c;     /* turtle shell green */
+      --muted: #666666;     /* subtext */
+    }
+
+    /* CSS-only, subtle cork-inspired background (very light) */
     body {
       margin: 0;
       font-family: "Georgia", "Times New Roman", serif;
-      background: #ffffff;
-      color: #2e2b29;
+      color: var(--ink);
       line-height: 1.6;
+      background:
+        radial-gradient(1px 1px at 20% 30%, rgba(0,0,0,0.06), transparent 60%),
+        radial-gradient(1px 1px at 70% 60%, rgba(0,0,0,0.05), transparent 60%),
+        radial-gradient(1px 1px at 40% 80%, rgba(0,0,0,0.04), transparent 60%),
+        linear-gradient(#f8f3ec, #fff); /* light cork wash */
+      background-size: 240px 220px, 260px 240px, 220px 260px, auto;
     }
 
-    .container {
-      width: min(850px, 92%);
-      margin: 0 auto;
-      padding: 20px;
-    }
+    .container { width: min(850px, 92%); margin: 0 auto; padding: 20px; }
 
-    header {
-      text-align: center;
-      padding: 40px 0 20px;
-    }
-    header img {
-      height: 80px;
-      width: auto;
-      margin-bottom: 12px;
-    }
+    header { text-align: center; padding: 48px 0 24px; }
+    header img { height: 150px; width: auto; margin-bottom: 14px; } /* Larger, centerpiece logo */
     header h1 {
-      font-size: 2.4rem;
-      margin: 0;
-      font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
-      color: #5f7d5c; /* turtle shell green */
+      font-size: 2.6rem; margin: 0; font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif; color: var(--green);
     }
-    header p {
-      color: #666;
-      margin-top: 6px;
-      font-size: 1.1rem;
-    }
+    header p { color: var(--muted); margin-top: 6px; font-size: 1.1rem; }
 
     h2 {
-      font-size: 1.8rem;
-      font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
-      margin-top: 40px;
-      margin-bottom: 10px;
-      color: #5f7d5c; /* accent green */
+      font-size: 1.85rem; font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif; margin-top: 40px; margin-bottom: 14px; color: var(--green);
+      display: flex; align-items: center; gap: 10px;
+    }
+    h3 { font-size: 1.25rem; margin-top: 20px; margin-bottom: 6px; color: var(--green); }
+    p { margin: 0 0 14px; }
+    ul li { margin-bottom: 8px; }
+
+    /* Small turtle icon next to each section header */
+    .section-icon {
+      height: 22px; width: 22px; object-fit: contain; opacity: 0.9;
+      filter: drop-shadow(0 0 0 rgba(0,0,0,0));
     }
 
-    h3 {
-      font-size: 1.3rem;
-      margin-top: 20px;
-      margin-bottom: 6px;
-      color: #5f7d5c; /* accent green */
-    }
-
-    p {
-      margin: 0 0 14px;
-    }
-
-    ul li {
-      margin-bottom: 8px;
-    }
-
-    footer {
-      text-align: center;
-      padding: 40px 0;
-      font-size: 0.95rem;
-      color: #777;
-    }
-    footer a { color: #2e2b29; text-decoration: underline; }
+    footer { text-align: center; padding: 44px 0; font-size: 0.95rem; color: #777; }
+    footer a { color: var(--ink); text-decoration: underline; }
   </style>
 </head>
 <body>
   <header>
     <img src="glogo.png" alt="Groondlings logo" />
     <h1>Groondlings</h1>
-    <p>Pet and People Projects — Comfort, Craft, and Community</p>
+    <p>Pet and People Projects — combining digital technology with hand craftsmanship for comfort, craft, and community.</p>
   </header>
 
   <main class="container">
     <section id="about">
-      <h2>About</h2>
-      <p>Groondlings began as Pet and People Furniture — modular pet steps, cabinetry, and comfortable seating. As our workshop expanded into upholstery, CNC, laser, and welding, we grew into Pet and People Projects. Today we create comfort-forward builds for pets and people, from functional furniture to creative small-batch designs. Powered by Solyd Solutions.</p>
+      <h2><img class="section-icon" src="glogo.png" alt="" aria-hidden="true"/> About</h2>
+      <p>Groondlings began as Pet and People Furniture — modular pet steps, cabinetry, and comfortable seating. As our workshop expanded into upholstery, CNC, laser, and welding, we grew into Pet and People Projects. Today we create comfort-forward builds for pets and people, from functional furniture to creative small-batch designs. Powered by Solyd Solutions and finished by hand.</p>
     </section>
 
     <section id="lines">
-      <h2>Product Lines</h2>
+      <h2><img class="section-icon" src="glogo.png" alt="" aria-hidden="true"/> Product Lines</h2>
       <h3>Pet Steps</h3>
       <p>Modular Baltic-birch steps with cork pads and optional rare-earth magnets. Designed for stability, accessibility, and repairability.</p>
       <h3>Column Lamps</h3>
@@ -99,8 +80,8 @@
     </section>
 
     <section id="craft">
-      <h2>Craft and Capability</h2>
-      <p>We rely on digital workflows for precision. Deploying a Shapeoko Pro 5 will increase throughput, reduce variance, and expand our ability to prototype fixtures and jigs in-house.</p>
+      <h2><img class="section-icon" src="glogo.png" alt="" aria-hidden="true"/> Craft and Capability</h2>
+      <p>We rely on digital workflows for precision and hand craftsmanship for finish. Deploying a Shapeoko Pro 5 will increase throughput, reduce variance, and expand our ability to prototype fixtures and jigs in-house.</p>
       <ul>
         <li>Improved nesting for material efficiency</li>
         <li>Faster jig and fixture production</li>
@@ -110,7 +91,7 @@
     </section>
 
     <section id="ops">
-      <h2>Operations and Impact</h2>
+      <h2><img class="section-icon" src="glogo.png" alt="" aria-hidden="true"/> Operations and Impact</h2>
       <h3>Small-Batch Production</h3>
       <p>Batch sizes tuned to demand. Modular designs enable repair, upgrades, and customization.</p>
       <h3>Community and Training</h3>
@@ -120,7 +101,7 @@
     </section>
 
     <section id="contact">
-      <h2>Contact</h2>
+      <h2><img class="section-icon" src="glogo.png" alt="" aria-hidden="true"/> Contact</h2>
       <p>Email: <a href="mailto:stack@solydx.com">stack@solydx.com</a></p>
       <p>Phone: <a href="tel:+19722928865">(972) 292-8865</a> (voice or text)</p>
       <p>Powered by Solyd Solutions — our digital design and documentation studio.</p>
